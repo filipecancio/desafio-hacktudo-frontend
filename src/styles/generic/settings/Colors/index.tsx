@@ -5,6 +5,7 @@ const Colors = createGlobalStyle`
     
     --c-coal-1: #EFEFEF;
     --c-coal-2: #CFCFCF;
+    --c-coal-2o5: rgba(207, 207, 207, 0.5);
     --c-coal-3: #8F908F;
     --c-coal-4: rgba(80, 81, 79);
     --c-coal-4o8: rgba(80, 81, 79, 0.8);

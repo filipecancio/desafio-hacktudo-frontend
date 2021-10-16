@@ -51,7 +51,7 @@ body {
 	line-height: 1;
 }
 body{
-        background: var(--c-coal-2);
+        background: var(--c-coal-1);
     }
 
 blockquote, q {

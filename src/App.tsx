@@ -1,10 +1,13 @@
 import React from 'react'
+import Scaffold from './component/atom/Scaffold';
 import GlobalStyle from './styles'
 
 const App: React.FC = () => (
   <>
-  <h1>Hello World!</h1>
-  <GlobalStyle/>
+    <GlobalStyle/>
+    <Scaffold>
+      <h1>Hello World!</h1>
+    </Scaffold>
   </>
 );
 
