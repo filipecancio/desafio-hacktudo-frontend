@@ -1,12 +1,13 @@
 import React from 'react'
 import Scaffold from './component/atom/Scaffold';
-import GlobalStyle from './styles'
+import BottomBarRouter from './router/BottomBarRouter';
+import GlobalStyle from './style'
 
 const App: React.FC = () => (
   <>
     <GlobalStyle/>
     <Scaffold>
-      <h1>Hello World!</h1>
+      <BottomBarRouter/>
     </Scaffold>
   </>
 );
