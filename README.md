@@ -1,5 +1,5 @@
 # desafio-hacktudo-frontend
-[![backend](https://img.shields.io/badge/project-backend-red)](https://github.com/filipecancio/desafio-hacktudo-backend)
+[![Backend](https://img.shields.io/badge/project-backend-red)](https://github.com/filipecancio/desafio-hacktudo-backend)
 
 ## Problema
 * Fica cada vez mais claro que estamos num mundo cada vez mais digital onde nossos recursos se tornam cada vez mais escassos. 
