@@ -21,9 +21,24 @@ Aproveitem as próximas horas para encontrar boas ideias. Amanhã nossos mentore
 * Precisamos incentivar um consumo mais inteligente e sustentável
 * Por outro mostrar o quão fácil e prático ele pode ser
 
-## Solução
-## Roadmaps
-## Referências
+### Panorama
+- Foi estipulado em 2010 uma politica para o controle de residuos solidos que afeta dieramente a economia do país[2]
+- De acordo com a ONU, o Brasil recicla apenas 2% de seu e-lixo, em um mercado que movimenta cerca de R$ 2,5 bilhões por ano [5]
+
+### Problemas
+- Catadores de lixo recebem menos de um salário mínimo e 80% levam filhos juntos [1]
+- Brasil descartou, em 2019, mais de 2 milhões de toneladas de resíduos eletrônicos, sendo que menos de 3% foram reciclados, de acordo com o relatório desenvolvido pela Universidade das Nações Unidas [4]
+- Brasil é o quinto maior produtor de lixo eletrônico [4]
+- Boa parte das soluções de e-lixo são feitas por micro empreendedores [3][5]
+- A adoção da politica de controle de residuos solidos deveria ajudar os catadores de lixo, mas está prejudicando com o fechamentos dos lixões.[2]
+
+### Referências
+1. [Os contrastes da Indústria do lixo](https://www.pucrs.br/revista/os-contrastes-da-industria-do-lixo/)
+2. [Como Política Nacional de Resíduos Sólidos influencia o meu negócio?](https://www.vgresiduos.com.br/blog/como-politica-nacional-de-residuos-solidos-influencia-o-meu-negocio/)
+3. [Rio passa a contar com sistema de coleta de lixo eletrônico](https://agenciabrasil.ebc.com.br/geral/noticia/2021-10/rio-passa-contar-com-coleta-de-lixo-eletronico)
+4. [Brasil é o quinto maior produtor de lixo eletrônico](https://agenciabrasil.ebc.com.br/geral/noticia/2021-10/brasil-e-o-quinto-maior-produtor-de-lixo-eletronico)
+5. [Lixo eletrônico gera lucro para pequenos empreendedores](https://atarde.uol.com.br/empregos/noticias/2090536-lixo-eletronico-gera-lucro-para-pequenos-empreendedores)
+
 ## Equipe
 * [DANIEL](https://github.com/danncorreia)
 * [FELIPE](https://github.com/filipecancio)
