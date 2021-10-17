@@ -40,7 +40,8 @@ Aproveitem as próximas horas para encontrar boas ideias. Amanhã nossos mentore
 5. [Lixo eletrônico gera lucro para pequenos empreendedores](https://atarde.uol.com.br/empregos/noticias/2090536-lixo-eletronico-gera-lucro-para-pequenos-empreendedores)
 
 ## Equipe
-* [DANIEL](https://github.com/danncorreia)
-* [FELIPE](https://github.com/filipecancio)
-* [ANDERSON](https://github.com/AndersonCRocha)
-* [VICTOR](https://github.com/VictorHugoAmorim)
+[![Frame 1](https://user-images.githubusercontent.com/13178261/137631917-fd868c2a-353c-454b-8a95-06a0b0af6aa5.png)](https://github.com/filipecancio)
+[![Frame 2](https://user-images.githubusercontent.com/13178261/137631918-7c859d7e-e646-485d-8e23-813fd88f657f.png)](https://github.com/AndersonCRocha)
+[![Frame 3](https://user-images.githubusercontent.com/13178261/137631925-a6bd8055-f179-4a97-b909-2a4b8dc7d2a4.png)](https://github.com/danncorreia)
+[![Frame 4](https://user-images.githubusercontent.com/13178261/137631932-fb272464-d2b9-492f-bb9c-a9b9d80dde44.png)](https://github.com/VictorHugoAmorim)
+
