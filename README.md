@@ -41,9 +41,11 @@ Aproveitem as próximas horas para encontrar boas ideias. Amanhã nossos mentore
 4. [Brasil é o quinto maior produtor de lixo eletrônico](https://agenciabrasil.ebc.com.br/geral/noticia/2021-10/brasil-e-o-quinto-maior-produtor-de-lixo-eletronico)
 5. [Lixo eletrônico gera lucro para pequenos empreendedores](https://atarde.uol.com.br/empregos/noticias/2090536-lixo-eletronico-gera-lucro-para-pequenos-empreendedores)
 
-#Solução
+# Solução
 
-## Solução como feature do app OLX
+### Solução como feature do app OLX
+![SOLUCAO1](https://user-images.githubusercontent.com/13178261/137632872-38f1466b-2b51-46ce-8164-d78d83bb37a9.png)
+
 ### Solução como app e-descarte
 ![SOLUCAO](https://user-images.githubusercontent.com/13178261/137632778-e5213b62-7bad-45cf-8017-4dc8c9ff2281.png)
 
