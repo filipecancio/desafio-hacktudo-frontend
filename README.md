@@ -1,4 +1,4 @@
-# desafio-hacktudo-frontend
+# ![Group 65](https://user-images.githubusercontent.com/13178261/137632483-d64eebe3-788f-4492-b440-5a9e565000a1.png)
 [![Backend](https://img.shields.io/badge/project-backend-red?style=for-the-badge&logo=github)](https://github.com/filipecancio/desafio-hacktudo-backend)
 [![Wireframe](https://img.shields.io/badge/figma-prototipo-red?style=for-the-badge&logo=figma)](https://www.figma.com/file/m4T7WAhdzQzns8oNDZQSew/e-descarte?node-id=4%3A2)
 [![video](https://img.shields.io/badge/pitch-video-green?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/1z8JKMGZiJaqFWN2rRXnpQBKJMNQtyudy/view?usp=sharing)
