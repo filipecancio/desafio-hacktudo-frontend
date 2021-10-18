@@ -17,6 +17,7 @@
   "rules": {
     "import/prefer-default-export": "off",
     "no-underscore-dangle": "off",
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "react/prop-types": "off"
   }
 }
