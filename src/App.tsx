@@ -1,15 +1,13 @@
-import React from 'react'
-import Scaffold from './component/atom/Scaffold';
-import BottomBarRouter from './router/BottomBarRouter';
-import GlobalStyle from './style'
+import React from 'react';
+import { Scaffold } from './components/atoms/Scaffold';
+import { BottomBarRouter } from './routes/BottomBarRouter';
+import { GlobalStyles } from './styles';
 
-const App: React.FC = () => (
+export const App: React.FC = () => (
   <>
-    <GlobalStyle/>
+    <GlobalStyles />
     <Scaffold>
-      <BottomBarRouter/>
+      <BottomBarRouter />
     </Scaffold>
   </>
 );
-
-export default App;
