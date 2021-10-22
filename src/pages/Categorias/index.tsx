@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { api } from '../../services/api';
 
 import backArrowIcon from '../../assets/icons/back-arrow.png';
-import computadorImagem from '../../assets/images/computador.png';
-// import smarthphoneImagem from '../../assets/images/smarthphone.png';
 
 import {
   Container,
@@ -16,11 +14,10 @@ import {
 } from './styles';
 
 interface IProduct {
+  id: string;
   name: string;
-  price: number;
-  photoUri: string;
-  announcedIn: string;
-  addressDistrict: string;
+  slug: string;
+  iconUri: string;
 }
 
 export const Categorias: React.FC = () => {
@@ -28,7 +25,7 @@ export const Categorias: React.FC = () => {
 
   useEffect(() => {
     (async () => {
-      const { data } = await api.get<IProduct[]>('/products');
+      const { data } = await api.get<IProduct[]>('/categories');
       setProducts(data);
     })();
   }, []);
@@ -42,10 +39,10 @@ export const Categorias: React.FC = () => {
         </ToolBar>
       </Header>
       <List>
-        {products.map((product) => (
-          <ListItem key={product.name}>
-            <ImgItem src={computadorImagem} alt="logo Filtros" />
-            <span className="nomeDescricao">Computadores</span>
+        {products.map((categorie) => (
+          <ListItem key={categorie.name}>
+            <ImgItem src={categorie.iconUri} alt="logo Filtros" />
+            <span className="nomeCategoria">{categorie.name}</span>
           </ListItem>
         ))}
       </List>
