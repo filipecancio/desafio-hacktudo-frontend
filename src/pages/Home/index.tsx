@@ -1,71 +1,77 @@
-import React from 'react';
-import { Text } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { api } from '../../services/api';
+import { currencyFormatter, dateTimeFormatter } from '../../utils/formatters';
+
 import favIcon from '../../assets/icons/fav.png';
 import filterIcon from '../../assets/icons/filter.png';
 import searchIcon from '../../assets/icons/search.png';
+
 import {
   Container,
-  Header,
-  GroupIcons,
-  ImgIcon,
-  ToolBar,
   FilterBar,
   FilterBarItem,
+  GroupIcons,
+  Header,
+  ImgIcon,
+  ImgItem,
   List,
   ListItem,
-  ImgItem,
   ListItemDescription,
+  ToolBar,
 } from './styles';
 
-export const Home: React.FC = () => (
-  <Container>
-    <Header>
-      <ToolBar>
-        <ImgIcon src={filterIcon} alt="logo" />
-        <GroupIcons>
-          <ImgIcon src={searchIcon} alt="logo" />
-          <ImgIcon src={favIcon} alt="logo" />
-        </GroupIcons>
-      </ToolBar>
-      <FilterBar>
-        <FilterBarItem>
-          DDD 77-
-        </FilterBarItem>
-        <FilterBarItem>
-          Categoria
-        </FilterBarItem>
-        <FilterBarItem>
-          Filtros
-        </FilterBarItem>
-      </FilterBar>
-    </Header>
-    <List>
-      <ListItem>
-        <ImgItem src="https://a-static.mlcdn.com.br/1500x1500/celular-samsung-galaxy-a-02-s-32gb-dual-sm-a025mzkvzto/gazinshop/9589/052ae7ff8a008d1e9724c2b6e9f71862.jpg" alt="logo Filtros" />
-        <ListItemDescription>
-          <Text>Titulo do Produto</Text>
-          <Text>R$0.00</Text>
-          <Text>16 ourutbor 21:05, Candeias</Text>
-        </ListItemDescription>
-      </ListItem>
+interface IProduct {
+  name: string;
+  price: number;
+  photoUri: string;
+  announcedIn: string;
+  addressDistrict: string;
+}
 
-      <ListItem>
-        <ImgItem src="https://a-static.mlcdn.com.br/1500x1500/celular-samsung-galaxy-a-02-s-32gb-dual-sm-a025mzkvzto/gazinshop/9589/052ae7ff8a008d1e9724c2b6e9f71862.jpg" alt="logo Filtros" />
-        <ListItemDescription>
-          <Text>Titulo do Produto</Text>
-          <Text>R$0.00</Text>
-          <Text>16 ourutbor 21:05, Candeias</Text>
-        </ListItemDescription>
-      </ListItem>
+export const Home: React.FC = () => {
+  const [products, setProducts] = useState<IProduct[]>([]);
 
-      <ListItem>
-        <ImgItem src="https://a-static.mlcdn.com.br/1500x1500/celular-samsung-galaxy-a-02-s-32gb-dual-sm-a025mzkvzto/gazinshop/9589/052ae7ff8a008d1e9724c2b6e9f71862.jpg" alt="logo Filtros" />
-        <ListItemDescription>
-          <Text>Titulo do Produto</Text>
-          <Text>R$0.00</Text>
-          <Text>16 ourutbor 21:05, Candeias</Text>
-        </ListItemDescription>
-      </ListItem>
-    </List>
-  </Container>
-);
+  useEffect(() => {
+    (async () => {
+      const { data } = await api.get<IProduct[]>('/products');
+      setProducts(data);
+    })();
+  }, []);
+
+  return (
+    <Container>
+      <Header>
+        <ToolBar>
+          <ImgIcon src={filterIcon} alt="logo" />
+          <GroupIcons>
+            <ImgIcon src={searchIcon} alt="logo" />
+            <ImgIcon src={favIcon} alt="logo" />
+          </GroupIcons>
+        </ToolBar>
+        <FilterBar>
+          <FilterBarItem>DDD 77-</FilterBarItem>
+          <FilterBarItem>Categoria</FilterBarItem>
+          <FilterBarItem>Filtros</FilterBarItem>
+        </FilterBar>
+      </Header>
+      <List>
+        {products.map((product) => (
+          <ListItem key={product.name}>
+            <ImgItem src={product.photoUri} alt="logo Filtros" />
+            <ListItemDescription>
+              <span>{product.name}</span>
+              <span className="price">
+                {currencyFormatter.format(product.price)}
+              </span>
+              <span>
+                {`${dateTimeFormatter.format(new Date(product.announcedIn))}, ${
+                  product.addressDistrict
+                }`}
+              </span>
+            </ListItemDescription>
+          </ListItem>
+        ))}
+      </List>
+    </Container>
+  );
+};
