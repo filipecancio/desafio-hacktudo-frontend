@@ -13,7 +13,7 @@ import {
   ToolBar,
 } from './styles';
 
-interface ICategorie {
+interface ICategory {
   id: string;
   name: string;
   slug: string;
@@ -21,11 +21,11 @@ interface ICategorie {
 }
 
 export const Categories: React.FC = () => {
-  const [categories, setCategories] = useState<ICategorie[]>([]);
+  const [categories, setCategories] = useState<ICategory[]>([]);
 
   useEffect(() => {
     (async () => {
-      const { data } = await api.get<ICategorie[]>('/categories');
+      const { data } = await api.get<ICategory[]>('/categories');
       setCategories(data);
     })();
   }, []);
@@ -39,10 +39,10 @@ export const Categories: React.FC = () => {
         </ToolBar>
       </Header>
       <List>
-        {categories.map((categorie) => (
-          <ListItem key={categorie.id}>
-            <ImgItem src={categorie.iconUri} alt="Categorie Icon" />
-            <span className="descriptionName">{categorie.name}</span>
+        {categories.map((category) => (
+          <ListItem key={category.id}>
+            <ImgItem src={category.iconUri} alt="Category Icon" />
+            <span className="descriptionName">{category.name}</span>
           </ListItem>
         ))}
       </List>
