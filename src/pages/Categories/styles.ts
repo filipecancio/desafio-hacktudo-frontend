@@ -20,7 +20,7 @@ export const ToolBar = styled.div`
   height: 65px;
   padding: 23px;
 
-  > .titulo {
+  > .title {
     margin-left: 25px;
   }
 `;
@@ -41,7 +41,7 @@ export const ListItem = styled.div`
   padding: 8px;
   width: 50%;
   
-  > .nomeDescricao {
+  > .descriptionName {
     color: #204628;
   }
 `;

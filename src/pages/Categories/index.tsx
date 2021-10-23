@@ -13,20 +13,20 @@ import {
   ToolBar,
 } from './styles';
 
-interface IProduct {
+interface ICategorie {
   id: string;
   name: string;
   slug: string;
   iconUri: string;
 }
 
-export const Categorias: React.FC = () => {
-  const [products, setProducts] = useState<IProduct[]>([]);
+export const Categories: React.FC = () => {
+  const [categories, setCategories] = useState<ICategorie[]>([]);
 
   useEffect(() => {
     (async () => {
-      const { data } = await api.get<IProduct[]>('/categories');
-      setProducts(data);
+      const { data } = await api.get<ICategorie[]>('/categories');
+      setCategories(data);
     })();
   }, []);
 
@@ -34,15 +34,15 @@ export const Categorias: React.FC = () => {
     <Container>
       <Header>
         <ToolBar>
-          <ImgIcon src={backArrowIcon} alt="logo" />
-          <span className="titulo">Todas as categorias</span>
+          <ImgIcon src={backArrowIcon} alt="back icon" />
+          <span className="title">Todas as categorias</span>
         </ToolBar>
       </Header>
       <List>
-        {products.map((categorie) => (
-          <ListItem key={categorie.name}>
-            <ImgItem src={categorie.iconUri} alt="logo Filtros" />
-            <span className="nomeCategoria">{categorie.name}</span>
+        {categories.map((categorie) => (
+          <ListItem key={categorie.id}>
+            <ImgItem src={categorie.iconUri} alt="Categorie Icon" />
+            <span className="descriptionName">{categorie.name}</span>
           </ListItem>
         ))}
       </List>
